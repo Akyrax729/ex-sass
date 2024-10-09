@@ -1,0 +1,68 @@
+@use "../base/font";
+@use "../abstract/mixins";
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first {
+    @include mixins.h2 (#c074cc, #40360d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second {
+    @include mixins.h2($rota:45deg);
+    width: 10vw;
+}
+.third {
+    @include mixins.h2(white,black,180deg,green);
+    width: 10vw;
+}
+.fourth {
+    @include mixins.h2(lightslategrey,purple,300deg,black);
+    width: 10vw;
+}
+main section {
+    position: relative;
+    height: 30vh;
+    width: 300%;
+    background-color: green;
+    overflow: hidden;
+    z-index: -1;
+}
+// .bg {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+// }
+// .bg1 {
+//     background-color: purple;
+//     animation: carou 6s linear 4s infinite;
+//     transform: translateX(200%);
+// }
+// .bg2 {
+//     background-color: blue;
+//     animation: carou 6s linear 2s infinite;
+//     transform: translateX(200%);
+// }
+// .bg3 {
+//     background-color: red;
+//     animation: carou 6s linear 0s infinite;
+//     transform: translateX(200%);
+// }
+
+// @keyframes carou1 {
+//     0% {
+//         transform: translateX(200%);
+//     }
+//     10% {
+//         transform: translateX(200%);
+//     }
+//     100% {
+//         transform: translateX(-100%);
+//     }
+// }

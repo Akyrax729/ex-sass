@@ -1,0 +1,9 @@
+@use "variable";
+
+@mixin h2($text-color:blue, $bg-color:black, $rota:0deg, $border-color:red) {
+    font-size: 36px;
+    color: $text-color;
+    background-color: $bg-color;
+    transform: rotate($rota);
+    border: 1px solid $border-color;
+}

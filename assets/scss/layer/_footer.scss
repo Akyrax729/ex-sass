@@ -1,0 +1,11 @@
+@use "../base/font";
+@use "../abstract/variable" as var;
+@use "../base/reset";
+@use "../base/global";
+
+
+footer {
+    background-color: var.$couleurdefond;
+    color: white;
+    
+}
